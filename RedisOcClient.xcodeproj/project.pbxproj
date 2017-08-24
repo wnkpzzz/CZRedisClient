@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CA549B41F4EDE2600A8A273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549B31F4EDE2600A8A273 /* main.m */; };
+		5CA549B71F4EDE2700A8A273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549B61F4EDE2600A8A273 /* AppDelegate.m */; };
+		5CA549BA1F4EDE2700A8A273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549B91F4EDE2700A8A273 /* ViewController.m */; };
+		5CA549BD1F4EDE2700A8A273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA549BB1F4EDE2700A8A273 /* Main.storyboard */; };
+		5CA549BF1F4EDE2700A8A273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA549BE1F4EDE2700A8A273 /* Assets.xcassets */; };
+		5CA549C21F4EDE2700A8A273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA549C01F4EDE2700A8A273 /* LaunchScreen.storyboard */; };
+		5CA549E21F4EDED800A8A273 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549CB1F4EDED800A8A273 /* async.c */; };
+		5CA549E31F4EDED800A8A273 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549CD1F4EDED800A8A273 /* dict.c */; };
+		5CA549E41F4EDED800A8A273 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549D01F4EDED800A8A273 /* hiredis.c */; };
+		5CA549E51F4EDED800A8A273 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549D31F4EDED800A8A273 /* net.c */; };
+		5CA549E61F4EDED800A8A273 /* read.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549D51F4EDED800A8A273 /* read.c */; };
+		5CA549E71F4EDED800A8A273 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549D71F4EDED800A8A273 /* sds.c */; };
+		5CA549E81F4EDED800A8A273 /* CocoaPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549DC1F4EDED800A8A273 /* CocoaPromise.m */; };
+		5CA549E91F4EDED800A8A273 /* CocoaRedis.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA549DF1F4EDED800A8A273 /* CocoaRedis.m */; };
+		5CA549EA1F4EDED800A8A273 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CA549E01F4EDED800A8A273 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CA549AF1F4EDE2600A8A273 /* RedisOcClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedisOcClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA549B31F4EDE2600A8A273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CA549B51F4EDE2600A8A273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CA549B61F4EDE2600A8A273 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CA549B81F4EDE2700A8A273 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5CA549B91F4EDE2700A8A273 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CA549BC1F4EDE2700A8A273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CA549BE1F4EDE2700A8A273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA549C11F4EDE2700A8A273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CA549C31F4EDE2700A8A273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA549CB1F4EDED800A8A273 /* async.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async.c; sourceTree = "<group>"; };
+		5CA549CC1F4EDED800A8A273 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		5CA549CD1F4EDED800A8A273 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		5CA549CE1F4EDED800A8A273 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		5CA549CF1F4EDED800A8A273 /* fmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmacros.h; sourceTree = "<group>"; };
+		5CA549D01F4EDED800A8A273 /* hiredis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hiredis.c; sourceTree = "<group>"; };
+		5CA549D11F4EDED800A8A273 /* hiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiredis.h; sourceTree = "<group>"; };
+		5CA549D21F4EDED800A8A273 /* macosx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macosx.h; sourceTree = "<group>"; };
+		5CA549D31F4EDED800A8A273 /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		5CA549D41F4EDED800A8A273 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		5CA549D51F4EDED800A8A273 /* read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read.c; sourceTree = "<group>"; };
+		5CA549D61F4EDED800A8A273 /* read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read.h; sourceTree = "<group>"; };
+		5CA549D71F4EDED800A8A273 /* sds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sds.c; sourceTree = "<group>"; };
+		5CA549D81F4EDED800A8A273 /* sds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sds.h; sourceTree = "<group>"; };
+		5CA549D91F4EDED800A8A273 /* win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32.h; sourceTree = "<group>"; };
+		5CA549DB1F4EDED800A8A273 /* CocoaPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaPromise.h; sourceTree = "<group>"; };
+		5CA549DC1F4EDED800A8A273 /* CocoaPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaPromise.m; sourceTree = "<group>"; };
+		5CA549DE1F4EDED800A8A273 /* CocoaRedis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaRedis.h; sourceTree = "<group>"; };
+		5CA549DF1F4EDED800A8A273 /* CocoaRedis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaRedis.m; sourceTree = "<group>"; };
+		5CA549E01F4EDED800A8A273 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA549E11F4EDED800A8A273 /* RedisKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedisKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CA549AC1F4EDE2600A8A273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CA549A61F4EDE2600A8A273 = {
+			isa = PBXGroup;
+			children = (
+				5CA549B11F4EDE2600A8A273 /* RedisOcClient */,
+				5CA549B01F4EDE2600A8A273 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CA549B01F4EDE2600A8A273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549AF1F4EDE2600A8A273 /* RedisOcClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CA549B11F4EDE2600A8A273 /* RedisOcClient */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549C91F4EDED800A8A273 /* RedisLibrary */,
+				5CA549B51F4EDE2600A8A273 /* AppDelegate.h */,
+				5CA549B61F4EDE2600A8A273 /* AppDelegate.m */,
+				5CA549B81F4EDE2700A8A273 /* ViewController.h */,
+				5CA549B91F4EDE2700A8A273 /* ViewController.m */,
+				5CA549BB1F4EDE2700A8A273 /* Main.storyboard */,
+				5CA549BE1F4EDE2700A8A273 /* Assets.xcassets */,
+				5CA549C01F4EDE2700A8A273 /* LaunchScreen.storyboard */,
+				5CA549C31F4EDE2700A8A273 /* Info.plist */,
+				5CA549B21F4EDE2600A8A273 /* Supporting Files */,
+			);
+			path = RedisOcClient;
+			sourceTree = "<group>";
+		};
+		5CA549B21F4EDE2600A8A273 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549B31F4EDE2600A8A273 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CA549C91F4EDED800A8A273 /* RedisLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549CA1F4EDED800A8A273 /* Hiredis */,
+				5CA549DA1F4EDED800A8A273 /* PromiseKit */,
+				5CA549DD1F4EDED800A8A273 /* RedisKit */,
+			);
+			path = RedisLibrary;
+			sourceTree = "<group>";
+		};
+		5CA549CA1F4EDED800A8A273 /* Hiredis */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549CB1F4EDED800A8A273 /* async.c */,
+				5CA549CC1F4EDED800A8A273 /* async.h */,
+				5CA549CD1F4EDED800A8A273 /* dict.c */,
+				5CA549CE1F4EDED800A8A273 /* dict.h */,
+				5CA549CF1F4EDED800A8A273 /* fmacros.h */,
+				5CA549D01F4EDED800A8A273 /* hiredis.c */,
+				5CA549D11F4EDED800A8A273 /* hiredis.h */,
+				5CA549D21F4EDED800A8A273 /* macosx.h */,
+				5CA549D31F4EDED800A8A273 /* net.c */,
+				5CA549D41F4EDED800A8A273 /* net.h */,
+				5CA549D51F4EDED800A8A273 /* read.c */,
+				5CA549D61F4EDED800A8A273 /* read.h */,
+				5CA549D71F4EDED800A8A273 /* sds.c */,
+				5CA549D81F4EDED800A8A273 /* sds.h */,
+				5CA549D91F4EDED800A8A273 /* win32.h */,
+			);
+			path = Hiredis;
+			sourceTree = "<group>";
+		};
+		5CA549DA1F4EDED800A8A273 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549DB1F4EDED800A8A273 /* CocoaPromise.h */,
+				5CA549DC1F4EDED800A8A273 /* CocoaPromise.m */,
+			);
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		5CA549DD1F4EDED800A8A273 /* RedisKit */ = {
+			isa = PBXGroup;
+			children = (
+				5CA549DE1F4EDED800A8A273 /* CocoaRedis.h */,
+				5CA549DF1F4EDED800A8A273 /* CocoaRedis.m */,
+				5CA549E01F4EDED800A8A273 /* Info.plist */,
+				5CA549E11F4EDED800A8A273 /* RedisKit.h */,
+			);
+			path = RedisKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CA549AE1F4EDE2600A8A273 /* RedisOcClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA549C61F4EDE2700A8A273 /* Build configuration list for PBXNativeTarget "RedisOcClient" */;
+			buildPhases = (
+				5CA549AB1F4EDE2600A8A273 /* Sources */,
+				5CA549AC1F4EDE2600A8A273 /* Frameworks */,
+				5CA549AD1F4EDE2600A8A273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedisOcClient;
+			productName = RedisOcClient;
+			productReference = 5CA549AF1F4EDE2600A8A273 /* RedisOcClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CA549A71F4EDE2600A8A273 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ZCZ;
+				TargetAttributes = {
+					5CA549AE1F4EDE2600A8A273 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = TP29TF729C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5CA549AA1F4EDE2600A8A273 /* Build configuration list for PBXProject "RedisOcClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CA549A61F4EDE2600A8A273;
+			productRefGroup = 5CA549B01F4EDE2600A8A273 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CA549AE1F4EDE2600A8A273 /* RedisOcClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CA549AD1F4EDE2600A8A273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA549EA1F4EDED800A8A273 /* Info.plist in Resources */,
+				5CA549C21F4EDE2700A8A273 /* LaunchScreen.storyboard in Resources */,
+				5CA549BF1F4EDE2700A8A273 /* Assets.xcassets in Resources */,
+				5CA549BD1F4EDE2700A8A273 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CA549AB1F4EDE2600A8A273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA549E71F4EDED800A8A273 /* sds.c in Sources */,
+				5CA549E31F4EDED800A8A273 /* dict.c in Sources */,
+				5CA549BA1F4EDE2700A8A273 /* ViewController.m in Sources */,
+				5CA549B71F4EDE2700A8A273 /* AppDelegate.m in Sources */,
+				5CA549E61F4EDED800A8A273 /* read.c in Sources */,
+				5CA549E91F4EDED800A8A273 /* CocoaRedis.m in Sources */,
+				5CA549E81F4EDED800A8A273 /* CocoaPromise.m in Sources */,
+				5CA549E21F4EDED800A8A273 /* async.c in Sources */,
+				5CA549E41F4EDED800A8A273 /* hiredis.c in Sources */,
+				5CA549E51F4EDED800A8A273 /* net.c in Sources */,
+				5CA549B41F4EDE2600A8A273 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CA549BB1F4EDE2700A8A273 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA549BC1F4EDE2700A8A273 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CA549C01F4EDE2700A8A273 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA549C11F4EDE2700A8A273 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CA549C41F4EDE2700A8A273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CA549C51F4EDE2700A8A273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CA549C71F4EDE2700A8A273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TP29TF729C;
+				INFOPLIST_FILE = RedisOcClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcz.redisocclient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5CA549C81F4EDE2700A8A273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TP29TF729C;
+				INFOPLIST_FILE = RedisOcClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcz.redisocclient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CA549AA1F4EDE2600A8A273 /* Build configuration list for PBXProject "RedisOcClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA549C41F4EDE2700A8A273 /* Debug */,
+				5CA549C51F4EDE2700A8A273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA549C61F4EDE2700A8A273 /* Build configuration list for PBXNativeTarget "RedisOcClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA549C71F4EDE2700A8A273 /* Debug */,
+				5CA549C81F4EDE2700A8A273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CA549A71F4EDE2600A8A273 /* Project object */;
+}
